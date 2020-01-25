@@ -1,0 +1,11 @@
+#version 400
+
+in vec3 frag_color;
+
+layout(location = 0) out vec4 out_color;
+
+void main()
+{
+	out_color = vec4(frag_color,1);
+	out_color.a=0.8f;
+}
